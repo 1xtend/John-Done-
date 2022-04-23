@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--darkColor);
 }
 
 html {
@@ -14,7 +15,6 @@ html {
 }
 
 body {
-  color: var(--darkColor);
   font-family: 'Heebo', sans-serif;
 }
 
@@ -288,15 +288,21 @@ p {
 }
 
 .dashboard__title {
+  display: block;
   font-weight: 700;
   font-size: 30px;
   line-height: 44px;
 
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  transition: color 0.2s;
+}
+
+.dashboard__title:hover {
+  color: var(--primaryColor);
 }
 
 .dashboard-coup {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .dashboard-coup__num {
